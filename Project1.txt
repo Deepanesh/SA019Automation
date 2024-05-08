@@ -1,3 +1,7 @@
 This is Project1 -----> Master
 
 Tester2 : new changes made by the tester2
+=======
+
+Tester1: First change made by tester1
+
