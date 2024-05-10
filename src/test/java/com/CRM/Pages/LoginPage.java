@@ -3,6 +3,8 @@ package com.CRM.Pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 
+import com.CRM.Utilitys.Utilitys;
+
 public class LoginPage {
 	private WebDriver driver;
 	
@@ -22,7 +24,9 @@ public class LoginPage {
 	{
 		driver.findElement(email).sendKeys(em);
 		driver.findElement(pass).sendKeys(ps);
+		Utilitys.capture(driver);
 		driver.findElement(btn).click();
+		Utilitys.capture(driver);
 		return driver.getCurrentUrl();
 	}
 	
